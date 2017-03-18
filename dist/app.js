@@ -1,8 +1,14 @@
-// import { square, num } from './lib'
-import * as lib from './lib'
+'use strict';
 
-console.log(lib.square(4))
-console.log(lib.num)
+var _lib = require('./lib');
+
+var lib = _interopRequireWildcard(_lib);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+console.log(lib.square(4)); // import { square, num } from './lib'
+
+console.log(lib.num);
 
 // let funcA = () => {
 //   let orgFunc = Symbol('funcA orgFunc')
@@ -156,8 +162,6 @@ console.log(lib.num)
 // let arr = [2,6,1]
 // funcA()
 // console.log(arr.sort())
-
-
 
 
 // var obj = {

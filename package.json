@@ -1,0 +1,11 @@
+  {
+    "name": "my-project",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "babel app.js -d dist",
+      "build-lib": "babel lib.js -d dist"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.0.0"
+    }
+  }
