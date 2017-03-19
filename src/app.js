@@ -1,8 +1,7 @@
-// import { square, num } from './lib'
-import * as lib from './lib'
+import { square, num } from './lib'
 
-console.log(lib.square(4))
-console.log(lib.num)
+console.log(square(4))
+console.log(num)
 
 // let funcA = () => {
 //   let orgFunc = Symbol('funcA orgFunc')
