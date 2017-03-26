@@ -1,6 +1,14 @@
-function square(x) {
+// module.exports = function (val) {
+//   return val * val;
+// }
+
+export default function sample(x) {
   return x * x
 }
-const num = Math.E + Math.PI
 
-export { square, num }
+// function square(x) {
+//   return x * x
+// }
+// const num = Math.E + Math.PI
+//
+// export { square, num }

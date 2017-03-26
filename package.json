@@ -1,11 +1,12 @@
-  {
-    "name": "my-project",
-    "version": "1.0.0",
-    "scripts": {
-      "build": "babel src/app.js -d dist",
-      "build-lib": "babel lib.js -d dist"
-    },
-    "devDependencies": {
-      "babel-cli": "^6.0.0"
-    }
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src/app.js --out-file dist/app.js",
+    "build-lib": "babel src/lib.js --out-file dist/lib.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "systemjs": "^0.19.47"
   }
+}

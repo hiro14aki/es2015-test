@@ -2,8 +2,35 @@
 
 var _lib = require('./lib');
 
-console.log((0, _lib.square)(4));
-console.log(_lib.num);
+var _lib2 = _interopRequireDefault(_lib);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// const System = require('systemjs')
+//
+// System.import('./src/lib.js')
+// .then(module => {
+//   console.log(module(4))
+// })
+// .catch(error => {
+//   console.log(error);
+// });
+
+// var lib = require('./lib')
+// console.log(lib(4))
+
+
+// var status = true
+// if(status){
+//   export default 'app'
+//   import lib from './lib'
+//   // console.log(lib(4))
+// }
+
+// import { square, num } from './lib'
+//
+// console.log(square(4))
+// console.log(num)
 
 // let funcA = () => {
 //   let orgFunc = Symbol('funcA orgFunc')
@@ -205,3 +232,4 @@ console.log(_lib.num);
 // for(val of obj){
 //   console.log(val)
 // }
+console.log((0, _lib2.default)(4));

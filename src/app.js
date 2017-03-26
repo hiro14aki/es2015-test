@@ -1,7 +1,32 @@
-import { square, num } from './lib'
+// const System = require('systemjs')
+//
+// System.import('./src/lib.js')
+// .then(module => {
+//   console.log(module(4))
+// })
+// .catch(error => {
+//   console.log(error);
+// });
 
-console.log(square(4))
-console.log(num)
+// var lib = require('./lib')
+// console.log(lib(4))
+
+
+// var status = true
+// if(status){
+//   export default 'app'
+//   import lib from './lib'
+//   // console.log(lib(4))
+// }
+
+console.log(lib(4))
+import lib from './lib'
+
+
+// import { square, num } from './lib'
+//
+// console.log(square(4))
+// console.log(num)
 
 // let funcA = () => {
 //   let orgFunc = Symbol('funcA orgFunc')
