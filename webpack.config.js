@@ -1,22 +1,18 @@
-let webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: './dist',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'app.bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
-       test: /\.js$/,
-       exclude: /node_modules/,
-       loader: 'babel-loader',
-       query: {
-         cacheDirectory: true,
-         presets: ['es2015']
-       }
-     }
-   ]
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      }
+    ]
   }
-};
+}

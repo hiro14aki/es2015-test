@@ -1,16 +1,17 @@
 {
-  "name": "my-project",
+  "name": "ES2015_project",
   "version": "1.0.0",
+  "description": "Setting for Webpack.",
+  "main": "app.js",
   "scripts": {
-    "watch": "webpack --watch --progress",
-    "build": "babel src/app.js --out-file dist/app.js",
-    "build-lib": "babel src/lib.js --out-file dist/lib.js"
+    "build": "webpack"
   },
+  "author": "Hiroaki Imai",
   "devDependencies": {
-    "babel-cli": "^6.0.0",
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.14.0",
-    "webpack": "^1.13.2"
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "webpack": "^2.3.2"
   }
 }
