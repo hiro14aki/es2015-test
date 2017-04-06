@@ -1,7 +1,17 @@
-'use strict';
+// Comfirm the Module loader.
+// ES Modules
+import { lib } from './lib'
+console.log(lib(4))
 
-var _lib = require('./lib');
+// CommonJS
+// var triangle = require('./lib').triangle
+// console.log(triangle)
 
-var _lib2 = _interopRequireDefault(_lib);
+// var lib = require('./lib')
+// console.log(lib.square(4))
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// var obj = {name: 'Alice'}
+// with (obj) {
+//   console.log(name)
+// }

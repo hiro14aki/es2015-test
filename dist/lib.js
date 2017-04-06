@@ -1,20 +1,11 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = sample;
-// module.exports = function (val) {
-//   return val * val;
-// }
-
-function sample(x) {
-  return x * x;
+// Export sample function.
+// ES Modules
+export function square(x) {
+  return x * x
 }
 
+// CommonJS
 // function square(x) {
 //   return x * x
 // }
-// const num = Math.E + Math.PI
-//
-// export { square, num }
+// exports.square = square
