@@ -76,11 +76,17 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = sample;
+exports.square = square;
 // Export sample function.
-function sample(x) {
+// ES Modules
+function square(x) {
   return x * x;
 }
+
+// CommonJS
+// function square(x) {
+//   return x * x
+// }
 
 /***/ }),
 /* 1 */
@@ -94,8 +100,6 @@ var _lib = __webpack_require__(0);
 var _lib2 = _interopRequireDefault(_lib);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-console.log((0, _lib2.default)(4)); // Comfirm the Module loader.
 
 /***/ })
 /******/ ]);

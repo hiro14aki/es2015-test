@@ -1,4 +1,10 @@
 // Export sample function.
-export default function sample(x) {
+// ES Modules
+export function square(x) {
   return x * x
 }
+
+// CommonJS
+// function square(x) {
+//   return x * x
+// }
