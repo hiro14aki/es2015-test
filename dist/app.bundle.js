@@ -63,43 +63,29 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.square = square;
-// Export sample function.
+// Comfirm the Module loader.
 // ES Modules
-function square(x) {
-  return x * x;
-}
+// import lib from './lib'
+// console.log(lib(4))
 
 // CommonJS
-// function square(x) {
-//   return x * x
+// var triangle = require('./lib').triangle
+// console.log(triangle)
+
+// var lib = require('./lib')
+// console.log(lib.square(4))
+
+var obj = { name: 'Alice' };
+// with (obj) {
+//   console.log(name)
 // }
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _lib = __webpack_require__(0);
-
-var _lib2 = _interopRequireDefault(_lib);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ })
 /******/ ]);

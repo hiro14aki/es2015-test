@@ -10,8 +10,7 @@
 // var lib = require('./lib')
 // console.log(lib.square(4))
 
-
 var obj = {name: 'Alice'}
-with (obj) {
-  console.log(name)
-}
+// with (obj) {
+//   console.log(name)
+// }
