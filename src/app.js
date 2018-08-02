@@ -1,16 +1,16 @@
-// Comfirm the Module loader.
-// ES Modules
-// import lib from './lib'
-// console.log(lib(4))
+const dispfloatMenu = new class {
+　sample() {
+    console.log("hoge")
+  }
+}
 
-// CommonJS
-// var triangle = require('./lib').triangle
-// console.log(triangle)
+dispfloatMenu.sample()
 
-// var lib = require('./lib')
-// console.log(lib.square(4))
 
-var obj = {name: 'Alice'}
-// with (obj) {
-//   console.log(name)
-// }
+class DisplayName {
+　sample() {
+    console.log("fuga")
+  }
+}
+const displayName = new DisplayName()
+displayName.sample()
