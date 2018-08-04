@@ -132,6 +132,32 @@ var DisplayName = function () {
 var displayName = new DisplayName();
 displayName.sample();
 
+// class DisplayFloatMenu {
+// 　sample() {
+//     console.log("fizz")
+//   }
+// }
+// const displayFloatMenu = new DisplayFloatMenu()
+
+var displayFloatMenu = new (function () {
+    function DisplayFloatMenu() {
+        _classCallCheck(this, DisplayFloatMenu);
+    }
+
+    _createClass(DisplayFloatMenu, [{
+        key: "sample",
+        value: function sample() {
+            console.log("fizz");
+        }
+    }]);
+
+    return DisplayFloatMenu;
+}())();
+displayFloatMenu.sample();
+
+var newDisplayFloatMeny = new DisplayFloatMenu();
+newDisplayFloatMeny().sample();
+
 /***/ })
 
 /******/ });
